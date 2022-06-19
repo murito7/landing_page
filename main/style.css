@@ -118,6 +118,11 @@ body {
         padding: 0 25px;
         line-height: 26px;
       }
+      .content-nav .title{
+        text-align: center;
+        font-size: 34px;
+        text-transform: uppercase;
+      }
       .showcase-grid-items {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
@@ -196,6 +201,14 @@ body {
         border: 1px solid #000;
         transform: translate(-50%, -50%);
         font-weight: 700;
+        transition: 250ms;
+      }
+      .content-section a:hover{
+        background-color: #000;
+        color: #fff;
+      }
+      .content-nav button{
+        display: none;
       }
   }
 @media screen and (min-width:1440px) {
@@ -222,4 +235,195 @@ body {
     .hero-text p{
         font-size: 72px;
     }
+    .content-img{
+        width: 700px;
+        height: 500px;
+        margin-left: 200px;
+        margin-top: 120px;
+    }
+    .content-section .box{
+        padding: 80px 0 0;
+        width: 550px;
+        height: 310px;
+        text-align: center;
+        background-color: #fff;
+        position: absolute;
+        right: 150px;
+        bottom: -442px;
+    }
+    .content-text{
+        width: 500px;
+        text-align: justify;
+        margin-left: 40px;
+    }
+    .content-title{
+        width: 400px; 
+    }
+    .content-nav .title{
+        font-size: 34px;
+        text-transform: uppercase;
+    }
+    .content-nav{
+        display: flex;
+        align-items: center;
+        padding: 0 120px;
+        width: 100%;
+        justify-content: space-between;
+        margin: 150px auto 100px;
+    }
+    .content-nav button{
+        display: block;
+        text-decoration: none;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 10px 40px;
+        border: 1px solid #000;
+        font-weight: 700;
+        height: 40px;
+        transition: 250ms;
+        background-color: #fff;
+        cursor: pointer;
+    }
+    .content-nav button:hover{
+        background-color: #000;
+        color: #fff;
+    }
+    .content-section a{
+        display: none;
+    }
+    .showcase-grid-items {
+        margin-top: 6em;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 255px);
+        column-gap: 3.7em;
+        row-gap: 2em;
+        justify-content: center;
+    }
+    .earth {
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)),
+          url("./images/desktop/image-deep-earth.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height:450px
+      }
+      
+      .night {
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)),
+          url("./images/desktop/image-night-arcade.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height:450px
+      }
+      
+      .soccer {
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)),
+          url("./images/desktop/image-soccer-team.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height:450px
+      }
+      
+      .thegrid {
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)),
+          url("./images/desktop/image-grid.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height:450px
+      }
+      
+      .from-above {
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)),
+          url("./images/desktop/image-from-above.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height:450px
+      }
+      
+      .pocket {
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)),
+          url("./images/desktop/image-pocket-borealis.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height:450px
+      }
+      
+      .curiosity {
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)),
+          url("./images/desktop/image-curiosity.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height:450px
+      }
+      
+      .eye {
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)),
+          url("./images/desktop/image-fisheye.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height:450px
+      }
+      
+      .grid-item-text {
+        display: flex;
+        height: 100%;
+        flex-flow: row;
+        align-items: flex-end;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 1.5em;
+        padding: 0 0 40px 40px;
+      }
+      
+      .grid-item-text:hover {
+        color: #000;
+        background: rgba(255, 255, 255, 0.6);
+        transition: all 0.3s;
+      }
 }
+@media screen and (min-width:1900px) {
+    nav{
+        padding: 40px 250px;
+    }
+    .hero-text{
+        margin-left: 300px;
+    }
+    .content-img{
+        margin-left: 250px;
+    }
+    .content-section .box{
+        background-color: #fff;
+        height: 450px;
+        width: 700px;
+        right: 400px;
+        bottom: -530px;
+    }
+    .content-section .content-nav{
+        padding: 0 240px;
+    }
+    .content-nav button{
+        margin-right: 15px;
+    }
+    .content-section .content-text{
+        font-size: 26px;
+        width: 650px;
+        line-height: 60px;
+    }
+    .content-section .content-title{
+        width: 600px;
+        margin-left: 30px;
+    }
+    .showcase-grid-items{
+        margin-top: 6em;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 255px);
+        column-gap: 6.7em;
+        row-gap: 2em;
+        justify-content: center;
+        width: 80%;
+        margin-left: 150px;
+    }
+    .showcase-grid-item{
+        width: 320px;
+    }
+}
+

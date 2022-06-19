@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Josephin Sans", sans-serif;
+  }
+  .hero-section{
+    height: 650px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("./images/mobile/image-hero.jpg") no-repeat center/cover;
+    position: relative;
+  }
+  nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
+    line-height: 60px;
+    width: 100%;
+  }
+  nav h1{
+    z-index: 11;
+    color: #fff;
+  }
+  .sidepanel  {
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    height: 650px;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 35px;
+  }
+  
+  .sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+  
+  .sidepanel a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidepanel .closebtn {
+    position: absolute;
+    top: 5px;
+    right: 30px;
+    font-size: 36px;
+  }
+  
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    color: #e0e0e0;
+    width: 60px;
+    height: 40px;
+    padding: 10px 15px;
+    border: none;
+  }
+  .hero-text{
+    width: 90%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid #fff;
+    padding: 20px 
+  }
+  .hero-text p{
+    color: #fff;
+    font-size: 40px;
+    text-transform: uppercase;
+    width: 120px;
+    position: relative;
+  }
